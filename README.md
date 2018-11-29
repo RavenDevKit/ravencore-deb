@@ -11,18 +11,18 @@ server_name ravencoin.network;
 ```
 If running in a test VM be sure to make a hosts entry on whatever device you are accessing the site from to convert between the domain name and the ip of the test VM. For production usage be sure to customize all passwords for ravencoin
 
-Using the build environment 
+Using the build environment
 ------------------
 ````
-sudo apt-get update
-sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-sudo apt-get update
-sudo apt-get install -y docker-ce git make
-git clone https://github.com/underdarkskies/ravencore-deb
-cd ravencore-deb/rvn
-sudo make
+$sudo apt-get update
+$sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+$curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+$sudo apt-get update
+$sudo apt-get install -y docker-ce git make
+$git clone https://github.com/OverstockMedici/ravencore-deb
+$cd ravencore-deb/rvn
+$sudo make
 ````
 DEB file will appear in ravencore-deb/rvn/
 
