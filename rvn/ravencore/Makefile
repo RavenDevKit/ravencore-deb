@@ -1,5 +1,5 @@
 all:
-	git clone https://github.com/OverstockMedici/ravencore
+	git clone https://github.com/RavenDevKit/ravencore
 	cd ravencore && git checkout master
 	cd ravencore && rm -rf .git # Delete .git folder to reduce space
 	cd ravencore && npm install --production
